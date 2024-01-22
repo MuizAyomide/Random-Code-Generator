@@ -1,20 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-*{
-    font-family: Montserrat;
+body{
+    font-family: Montserrat, sans-serif;
 }
 
 .container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center     ;
     width: 550px;
     height: 400px;
     color: aliceblue;
-    border: 1px solid black;
     margin: 100px auto;
     border-radius: 50px;
     background-image: url(M.QuoteImages/robin-pierre-dPgPoiUIiXk-unsplash.jpg);
     background-size: cover;
+    transition: all 1ms ease-in-out;
 }
 
 .container .buttom-section{
@@ -27,14 +29,50 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 .home-quote{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    text-align: center;
+}
+
+.buttom-section button{
+    background-color: #fff;
+    padding: 0.3rem 1rem ;
+    border-radius: 30px;
+    border: none;
+    color: #FF0000;
 }
 
 .home-quote h1{
     font-family: Montserrat;
-    font-size: 3rem;
+    font-size: 4rem;
+    margin: 80px auto;
+    font-weight: 400;
+    color: #FF0000;
+}
+
+
+/* /////////////////////// QUOTES STYLES ///////////////// */
+
+.home-quote h3{
+    font-weight: 100;
+    color: #FF0000;
+    position: relative;
+    top: 20px;
+    left: -190px;
+}
+
+.home-quote h4{
+    font-weight: 100;
+    position: relative;
+    right: -190px;
+    bottom: -160px;
+}
+
+.home-quote p{
+    position: relative;
+    top: 90px;
+    font-size: 1.4rem;
 }
