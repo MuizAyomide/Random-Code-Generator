@@ -1,8 +1,8 @@
-const button = document.querySelector('button');
+
 const quoteObj = [{
                   quotes:'The greatest glory in living lies not in never falling, but in rising every time we fall',
                   author:'Nelson Mandela',
-                  src:'M.QuoteImages/pic01.png'
+                  src: MQuoteImages/pic01.png
                 },
                 {
                   quotes:'The way to get started is to quit talking and begin doing.',
@@ -51,11 +51,16 @@ const quoteObj = [{
                 },
         ];
 
-const quote = document.querySelector('p');
-button.addEventListener('click', () => {
-    var display = "";
-for(var i = 0; i < quoteObj.quotes; i++){
-    display += quoteObj[i].quotes;
+const quote = document.querySelector('.p');
+const writter = document.querySelector('.author');
+const button = document.querySelector('button');
+var container = document.querySelector('.container');
+
+function quoteDisplay() {
+quote.innerText = quoteObj[0].quotes;
+writter.innerHTML = quoteObj[0].author;
+// container.style.backgroundImage = "url(quoteObj[0].src)";
 }
-   console.log(quote.innerHTML = display);
-})
+
+button.addEventListener('click', quoteDisplay);
+
