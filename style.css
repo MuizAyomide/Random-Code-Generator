@@ -1,4 +1,6 @@
-
+*{
+    font-family: montserrat;
+}
 .container{
     width: 500px;
     height: 400px;
@@ -142,7 +144,7 @@
     border-radius: 0px 0px 50px 50px;
 }
 
-/* --------------------------- End Style -------------------------- */
+/* --------------------------- End Part -------------------------- */
 .end-all-content{
     position: relative;
     top: -405px;
