@@ -1,81 +1,179 @@
-*{
-    box-sizing: border-box
-}
-body{
-    font-family: Montserrat, sans-serif;
-}
 
 .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center     ;
-    width: 550px;
+    width: 500px;
     height: 400px;
-    color: aliceblue;
     margin: 100px auto;
     border-radius: 50px;
-    background-image: url(M.QuoteImages/robin-pierre-dPgPoiUIiXk-unsplash.jpg);
-    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+
+.container img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.all-content{
+    position: relative;
+    top: -405px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    z-index: 1;
+    text-align: center;
+    color: #FF0000;
+}
+.container .header{
+    font-size: 5rem;
+} 
+
+.container .title{
+    font-size: 1.5rem;
+}
+
+.bottom-part{ 
+    align-items: center;
+    width: 100%;
+    height:80px;
+    background-color: #302c2c67;
+}
+
+.bottom-part .btn{
+   margin: 25px;
+   background: white;
+   border: none;
+   border-radius: 20px;
+   padding: 0.3em 1em;
+   color: #FF0000;
+}
+
+.btn{
     transition: all 1ms ease-in-out;
 }
 
-.container .buttom-section{
-    width: 100%;
-    height: 65px;
-    background-color: #616161b4;
+.btn:hover{
+    background-color: #f3d5d5;
+}
+
+/* ----------------------------- Quote Style ------------------------------- */
+
+.quote-container{
+    width: 500px;
+    height: 400px;
+    margin: 100px auto;
+    border-radius: 50px;
+    overflow: hidden;
     position: relative;
-    left: 0;
-    border-radius: 0px 0px 50px 50px;
+    display: block;
+}
+
+.quote-all-content{
+    position: relative;
+    top: -405px;
+    left: 0px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.home-quote{
+    flex-direction: column;
+    gap: 110px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    z-index: 1;
     text-align: center;
-}
-
-.buttom-section button{
-    background-color: #fff;
-    padding: 0.3rem 1rem ;
-    border-radius: 30px;
-    border: none;
     color: #FF0000;
 }
 
-.home-quote h1{
-    font-family: Montserrat;
-    font-size: 4rem;
-    margin: 60px auto;
-    font-weight: 400;
+.quote-container img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.quote-content{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.quote-content .quote-header{
+    text-align: left;
+    margin: 20px 30px;
+    font-size: 1.2rem;
+}
+
+.quote-content .quote{
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.author{
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    color: #fff;
+}
+
+.quote-bottom-part{ 
+    align-items: center;
+    width: 100%;
+    height:70px;
+    background-color: #302c2c67;
+    position: absolute;
+    bottom: 1px;
+    z-index: 0;
+    border-radius: 0px 0px 50px 50px;
+}
+
+/* --------------------------- End Style -------------------------- */
+.end-all-content{
+    position: relative;
+    top: -405px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    z-index: 1;
+    text-align: center;
     color: #FF0000;
 }
 
-.home-quote p {
+.container .end-header{
+    font-size: 5rem;
+    color: #fff;
+} 
 
+.container .end-title{
+    font-size: 2rem;
+    color: #fff;
 }
 
-
-/* /////////////////////// QUOTES STYLES ///////////////// */
-
-.home-quote h3{
-    font-weight: 100;
-    color: #FF0000;
-    position: relative;
-    top: 20px;
-    left: -190px;
-}
-
-.home-quote h4{
-    font-weight: 100;
-    position: relative;
-    right: -190px;
-    bottom: -160px;
-}
-
-.home-quote p{
-    position: relative;
-    top: 90px;
-    font-size: 1.4rem;
+.end-name{
+color: #fff;
 }
