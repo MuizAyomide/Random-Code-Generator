@@ -6,7 +6,7 @@ var quoteObj = [{
                 },
                 {
                   quotes:'The way to get started is to quit talking and begin doing.',
-                  author:'Walt Disney',
+                  author:'Akinrinola Muiz',
                   url:'MQuoteImages/pic02.jpg'
                 },
                 {
